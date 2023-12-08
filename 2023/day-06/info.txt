@@ -1,0 +1,22 @@
+For example:
+
+Time:      7  15   30
+Distance:  9  40  200
+
+Tlist = [7, 15, 30] t
+pushtime speed=pushtime time=Time-pushtime Distance=speed*time
+t:0-7    t              T-t                t*(T-t)
+
+condition:distance > Distance
+
+
+part 2
+...now instead means this:
+
+Time:      71530
+Distance:  940200
+Now, you have to figure out how many ways there are to win this single race. In this example, the race lasts for 71530 milliseconds and the record distance you need to beat is 940200 millimeters. You could hold the button anywhere from 14 to 71516 milliseconds and beat the record, a total of 71503 ways!
+
+How many ways can you beat the record in this one much longer race?
+
+could hold ANTWHERE!
