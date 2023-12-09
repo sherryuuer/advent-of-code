@@ -12,8 +12,8 @@ def char_to_num(char):
         return 13
     if char == 'Q':
         return 12
-    if char == 'J':
-        return 11
+    if char == 'J':  # J rule
+        return 1
     if char == 'T':
         return 10
 
@@ -47,6 +47,10 @@ def check_hand(hand):
             charl[c] = 1
             continue
         charl[c] += 1
+    if len(charl) > 1 and 'J' in charl:
+        n = charl.pop('J')
+        max_key = max(charl, key=charl.get)
+        charl[max_key] += n
     # print(charl)
     if len(charl) == 1:
         return 6  # five

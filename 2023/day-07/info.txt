@@ -21,3 +21,7 @@ High card
 where all cards' labels are distinct: 23456
 
 (765 * 1 + 220 * 2 + 28 * 3 + 684 * 4 + 483 * 5). So the total winnings in this example are 6440.
+
+
+part 2
+A, K, Q, T, 9, 8, 7, 6, 5, 4, 3, 2, J.
